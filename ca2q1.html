@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500&family=Lobster&family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500&family=Lobster&family=Montserrat:wght@100&family=Oswald&family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEXlOTX////lNzPkJR/lNDDjHBXkKiXkMCvjHxnkMCzkLCf40tLkKCPlMy/kJiD99PTmRED0urnse3n1v77jGBD519bzsbDthILujIr6397mPTnvlZT2x8boVlPsfHryqqnqa2n64uHyp6bwnJvpZGHoUE3xoJ/rc3H86unnSkfpXlv409LmQj799vb3y8vztLPVtJLIAAAMfElEQVR4nO2d12KjMBBFjUQRBHDF3XEcp9jZlP//u7Wz6wYaELrCkHKf9mGTcBAaaUYzo5b13dWq+wEq1y/h19cv4dfXL6EJbZL+cj3qPTx2mBeEgcc6jw+90XrZTzZX+OvVEk66s7ttLHjoBr4f2ewgO/L9wA254Nu7WXfyVuUzVEa4+hhvHR4GEWOtHLEoCLmzHX2sqnqQSgg3w2dbhF4u2iWn74roebiq4mHME76PmeP66nSn0XQFG78bfx7DhPPbgJcYuwylx93e3OwjmSRMRm6sMXgpSD8OR4nBpzJG2L7vCGD0LkdSvN63TT2YIcJJT7hm8P5DuqJnaCCNEM4XAv46M/LFwsiMNEDY3XLbNN6nbN7pNoCwO42ND99RLJ7CjCDhvMOr4/tk5J1+jYTJQlTL949xAdkcgLB961Qz/9KynR6wdugTLoV3Fb69fLG8OuHksUIDkxWLt5PrEs6u9IGeZA9mVyScdNwr8+3ldrSGUYfw6eoD+E+283QVwvZLXAvfXvFLeaNamvAmjGoDbLWi8KZqwvXgmiY0KzZYV0t4x2vl2yu+q5Bw07neIk/Ley0VZi1DmAT12NC07KDMRrUEYd+pdwqexJwS/oY64bJmG3MuNlDfpyoTrp26sS7kKJtUVcKZqJspJaG6TVUkHNe/SqTFxyYJGwiojKhEOGsi4A5R6UNVIVw3bQ4eJFTMjQLhsllW9FyOwqJRTNgf1M2Ro0Hx0l9ImDRmJyMTcwo3cEWEm6DJgDvEoGgbXkTYacZmm5bdwQjvmuAu5csr8BfzCdf1hWTUxfPXjFzCmyab0ZMGubGbPMJ22GwrcxAL8yJweYQvdUbVyih60SN8+gqT8J/inFAxTThp7mYtK4cO+NOEjV8Jz5WzKpKEszoOX/Tlkp4URTj5GgvFSeR3ShE+fqVvdC/7sRzh8uvY0YNiwleUE7aN51gw2w9CzoVwHEcIzkPXi8z+DSbk676csOcb/dt+KPhidN+9mWza7bf2ZjP501/OnqeC6ySiUvJu1QkTg0sh83jUo3Kck2GPCWOnIXJvWEq4MGZm7DgYF3jhk6etobRNe6FKODcVW4ucF6UjlNUsMLLJF7JkRhlhx8zcsMWD+inYcGqAkcl2NhLCrpH4L4sf/yjzfTJ6AfxHuSSTUUI4NTGEER+W4ttrDIf12FSFsGtisddJC9mZ1ld0GOPsIGYJDcxCpn66l9ItaOQkMzFDOMdnIRP6dSHoSTPPmNMMIb4WRjZSkvaObRiza2KaMIHXwmiKlUokGKJIe1FpQnhHGr2itXbYSYnfyydso0Not/Bilzm0LU67GCnCezB2wUITZaFL5D2797mEr+BSUXzYpaQesC6mF4xLQtTOcP2E80shb1pcvuVLwhF21OQ9GwKEgrXeKIcQ29+zqMiMJh/r8Wg0ni3nq4L/Odb/TllIE86xLamTu5VpLxf7ymfP973ADYVzN8y1urb+y44v9jUXhLfQYujnfaObW+Fe7pYiVzznJN/39XeP/kXA5oIQKpJkPGdMZgPZy/MHPfq71o/YsoAifIc23QHtT2zI+gzPI91k4Gn4+XQ5JxwjlvTyxV3oRtDDwQZkgaH+IHrnGW/nhPndDwqU3kqcNM/fZ5KIfW27x86pzv69QpZ7FlMzKinw+NiA2gfpB8Wds73jGeEQ2ZN61OnWptB8MUb86Ex71rhnQaIzwmfk2N6hdtyL4t8aEImiE+2PKjpbuM4IkZOS6IEAfAoVfpp6PdqrPrNlhNA0DAlzsVFy2H35mQpg3MVKQvih8rbJ30jYmWe1XdJAvlnoaz9S+CEhRPyKiMgtU3URAnm2yEb7szrzL06ESJyU+khVoz6yWPVe2mdSbCshRIIjhKloK/9OIV8T9bc1TpYwATalZ2/sQk/KTh6xnOovYPzothwJu4Ch8YgFTf3DZ6/SXzDWdudO8+ZIOAOCP6H8HLTM+mNLpb9TDmYZwjtgRyPk0/C+zEtjUmk/0sm6Hwm3QP8qIf9IH2rM3jyZhiMh0IXFJtI760xuZHGaUH9xJQ0NYp1xHWdOy8DjuPIDbcgbg8WTFKH+FrDViuVRRCgoAuto3w+ES+CFc3lQ8KXW9Mbjh3UgXAPLIeFYQGEfWMfQ34FwpB8MZp4U8K3eskx/lCIEzn6JHRfkUeM6ngUfCIHVWZ4wZ/2pdwyPcZUDIZD1TMRowGMeVMes6AMh4P9G8hMZKCqC63gUfCAEDJ8/khIi648BHaOwB0Igh5XYtJXyLMyL+SlCoBiWIFR38CvR8aToQAgcHTaU0P1xY2h+HtZNmJ6HgC1tKGHalgLrYUNXi/R6iOxp5Ct+vQ5wdk+D7EvlYRrEpzagzL4U8C2Iuribmr2ntG+B+IfyY5W6vae0fwj4+Me19VJwMi6mjI+PWD6i8A/ITDOgTJwGsQtcfjRmrgJOR5lYGxIvJQ5mgKltQJl4KRLzJs6o610QMzFv5NwiUwCAfxawsucW0NkT0dCgTGkI4zIBz5Q9e0LODx15SLjEr2St5CarRP+1S84PkTNgwpiWmIiefPeu75dLzoCRc3xXXoRQwnrF0utI9BPbZOf4E8AuUAlDyi18Uun1BwEBSUkuBnJiS+UHK2ejE9YYWFEl+TSIMW1xoheVauSAy08g9bMlpTlRSF5bQOTPDtU+M/PeiTSvDYnCU3lpinXhodxSAd6ANDcR8ueIvDS1UkLiABI5RJbml0I5wlTel1KdXSzPdNjo2z55jjCU5014wTtNCweC6g4EVHsSed6QL0BlmFqbos0lc1bynwRqEIlcfWgi2kQCZnG9hUO8GySSRdRbYMkTxJK2R8wpCto9DNUuD3AFqJoZLMWHOM3fa2WTv5gNqGIiqIqUqnvCatdyWkW8PROuoheSFwAqZvlLRdauIUdseTNxpz7LFuAyf0DfNoa0qqLrD8EaUmJn8l/DzkXLq33/r15OCSkSqMupIcUSRHKLSPfDMnsc8Dh03TDkTtD7yPvfUJ8jTtcBg7XcZPHTSZN5dzjs9pOC1hJQ99vU7sNoPb5G5yS57pDpkluPj/ZUGKyMAC4xo57XUwHti8GmJq5JxzrU5PfFgHub+PS6r6w21oGvoLcJfCQW4K0xtlgRQ0F/GrzHUEhUSyrrBbN2mWrNNCEQojwgyuNmqnoAk1QK+0QZOPULC1r55+oFBCzu9WWiX1uw1e0V1YavrlPo12ai514U6LWkSwK0Ukql556RvolsoHjd1IWe8JvdlPommul9GUzLDuNqgacYqfW+NNW/1LlblQE0csOwYv9SUz1oo1wH8FL3gYlMRqkTXmkfYd95UOkjvJm5UHejo5T7CBvMhIlid5Q/IdvdB8fQjUvqvaBN9/MOH5Z/pD7H25+nF2HufuES/bytntHSQRYFXLDn2XCeTDbtt7f2ZpW8f6x7rw43eXdrmZ7sFfTV32O6Z431Yzcw2HD+8w+U6qv//e9G+AH3W/yAO0q+/z0zP+CuoB9w39P3v7PrB9y79nXuznN17877/vcfWta6mZc5Xwq5w/IH3EP6BVZF9C7ZH3Af8Pe/09my5k02qCbu5basYXO3b47CsboCobWut86OllC5sEeF0Jo1c1nkpMdUmtAaNxGRq52NqBE2EVERUJXQmjVtLgqlT7QEofXULIuqfiuYMqE1xE/3jIkN1LOv1AmL+uNfUcxRujiyNKGVmIzBA7KDMjcSlSG0NnAigQl5nVJ3SpUi3PmL9a8avGQyS0lCa12zvWGDslcrliW0btw6y+wjNzcmY4TQar/UF0fVufyzPOF+8a/Hptpk9YlpQmtC3v1TpdyOcmoHTLi/v+naw2g7qhtRM4TW5DG+plFl8aPWAAKE+2sYr7f8e0L/2kF9Qqt9eyWLYzt09VClhLuN6iK38M6MmFhAF2NChDt/Ywv0H1Hi4x2yvO0qhJbVnVZoclg8Ja9luxrhjnHLq/lWbd6B+YwQ7r7VhTCc4LSTLxbg9/lPRgh3y+OtMJNA+V/MdXpmLt41RWhZb/cdgZXznPA88XqPXw39X8YId0pGLoe/VubH4cjQ8H3KJOFO89uAAyPJPO7eGpl9Jxkm3Ol93HJcjaFkkStaY71CjTyZJ9xpM3xmIiwxlvu65+h5uKriYSoh3GvVHW/3NxxHuZ0aGIuCkDvb0ceqqgepjPBTk+7sbhsKHrqB70f28RonO/L9fcqw4Nu7WVfXL1JTtYT/tEn6w/Wo9/DYYTuuwGedx4feaD3sJ6UCn5q6BmG9+iX8+vol/Pr6Jfz6+gtWaM/3rxlC8AAAAABJRU5ErkJggg==">
+    <title>The Car Legends</title>
+</head>
+<style>
+/*In this project-->  */
+/*Transitions used: 3 */
+/*Transformations: 5 times using 3 properties*/
+/*Animations used: 2*/
+/*Flex used: 1 */
+
+    body {
+
+        background-color: rgb(31, 29, 29);
+    }
+    .a {                             
+        height: 6px;
+        width: 66px;
+        background-color: red;
+        position: relative;
+        animation: Ritvik 1s ease-in-out 1.5s 1 forwards;    /* 1st animation for making T */
+    }
+
+    @keyframes Ritvik {
+        from {
+            top: 1px;
+            left: 2px;
+        }
+
+        to {
+            top: 1px;
+            left: 577px;
+        }
+    }
+
+    .b {
+        height: 50px;
+        width: 6px;
+        background-color: red;
+        position: relative;
+        animation: Ritvik2 1s ease-in-out 1.5s 1 forwards;    /* 2nd animation for making T */
+    }
+
+    @keyframes Ritvik2 {
+        from {
+            top: 1200px;
+            left: 560px;
+        }
+
+        to {
+            top: 1px;
+            left: 610px;
+        }
+    }
+
+    .c {
+        position: absolute;
+        top: 6px;
+        left: 636px;
+        font-size: 40px;
+        font-family: 'Lobster', cursive;
+        color: red;
+    }
+
+    body p {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Gill Sans', sans-serif;
+        position: absolute;
+        top: 125px;
+        left: 44px;
+    }
+
+    .navi {
+        display: flex;         /* Use of flex box to make navigation menu*/  
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 13px 7px;
+        padding: 7px 4px;
+        box-sizing: border-box;
+        border-bottom: 2px solid red;
+    }
+
+    li {
+        color: antiquewhite;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 4px 14px;
+        margin-left: 23px;
+    }
+
+    li:hover {
+        cursor: pointer;
+        background-color: red;
+        border-radius: 5px;
+    }
+
+    .g {
+        display: flex;
+        height: 204px;
+        width: 570px;
+        position: relative;
+        border: 7px solid red;
+        border-radius: 12px;
+        top: 103px;
+        left: 36px;
+        z-index: 2;
+
+    }
+
+    .h {
+        display: flex;
+        height: 204px;
+        width: 570px;
+        position: relative;
+        border: 7px solid red;
+        border-radius: 12px;
+        top: 132px;
+        left: 898px;
+    }
+
+    .i {
+        display: flex;
+        height: 204px;
+        width: 570px;
+        position: relative;
+        border: 7px solid red;
+        border-radius: 12px;
+        top: 166px;
+        left: 36px;
+    }
+
+    .im {
+        height: 205px;
+        width: 210px;
+        transition: all 1s ease-in-out;
+        border-right: 7px solid red;
+    }
+    #i1:hover{
+        cursor: pointer;
+        transform: scale(3) rotate(360deg) translateX(54px);
+        border: 3px solid rgb(129, 12, 12);
+    }
+    #i2:hover{
+        cursor: pointer;
+        transform: scale(3) rotate(360deg) translateX(54px);  
+        border: 3px solid rgb(129, 12, 12);                 
+
+    }
+    #i3:hover{
+        cursor: pointer;
+        transform: scale(3) rotate(360deg) translate(65px,-50px);  
+        border: 3px solid rgb(129, 12, 12);                    
+        z-index:10;
+        
+    }
+    .inf{
+        padding: 12px;
+        margin: 0px;
+        color: aliceblue;
+        background-color: black;
+        transition: all 1s ease-in; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 16px;
+    }
+    .inf2{
+        padding: 12px;
+        margin: 0px;
+        color: aliceblue;
+        background-color: black;
+        transition: all 1s ease-out; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 16px;
+    }
+    .inf3{
+        padding: 12px;
+        margin: 0px;
+        color: aliceblue;
+        background-color: black;
+        transition: all 1s ease-in-out;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        font-size: 16px;
+    }
+
+    .inf:hover {
+        cursor: pointer;
+        height: 260px;
+        width: 650px;
+        font-size: 18px;
+        transform: translateX(240px) scale(2);     
+        border: 5px solid red;                   
+        border-radius: 15px;
+        background-color: black;
+
+    }
+
+    .inf2:hover {
+        cursor: pointer;
+        height: 260px;
+        width: 650px;
+        font-size: 18px;
+        transform: translateX(-250px) scale(2);    
+        border: 5px solid red;                   
+        border-radius: 15px;
+        background-color: black;
+    }
+    .inf3:hover {
+        cursor: pointer;
+        height: 260px;
+        width: 650px;
+        font-size: 18px;
+        transform: scale(2) translate(130px,-130px);    
+        border: 5px solid red;                   
+        border-radius: 15px;
+        background-color: black;
+        z-index: 4;
+    }
+    .instr{
+        font-size: 13px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow';
+        color:antiquewhite;
+    }
+    #p1{
+        position:absolute;
+        top: 460px;
+        left: 160px;
+    }
+    #p2{
+        position:absolute;
+        top:708px;
+        right: 126px;
+        z-index: -4;
+    }
+    #p3{
+        position:absolute;
+        top:963px;
+        left:160px;
+    }
+    .my {
+            position: absolute;
+            top: 13px;
+            left: 1365px;
+    }
+
+    #myim {
+            height: 71px;
+            width: 71px;
+            border: 2px solid red;
+            border-radius: 50%;
+
+    }
+
+    #mxj {
+            font-size: 10px;
+            font-weight: bold;
+            color:rgb(177, 182, 187);
+            height: 80px;
+            width: 68px;
+            position: absolute;
+            top: 9px;
+            left: 1447px;
+    }
+    #mxj:hover{
+           cursor:pointer;
+    }
+
+    
+</style>
+
+<body>
+    <header>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c">he Car Legends</div>
+    </header>
+    <div id="f">
+        <ul class="navi">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>MOTORSPORT</li>
+            <li>MEMBERSHIP</li>
+            <li>CONTACT US</li>
+
+        </ul>
+    </div>
+
+    <p>The Car Legends are back with their choice of the 3 best&#128081; new SUV releases of India 2022 :</p>
+
+    </div>
+    <div class="g">
+        <img src="https://gumlet.assettype.com/evoindia%2F2021-08%2F1c32d636-7de7-4af3-a631-3a89fa2bbba1%2Fxuv700hero.jpeg?auto=format%2Ccompress&fit=max&format=webp&w=1536&dpr=1.3"
+            alt="xuv700" class="im" id="i1">
+        <span class="inf">Mahindra XUV700 is an all new, authentic, global SUV set to redefine benchmarks with its
+            sci-fi technology, spirited performance and first-in-class safety features and a great entering price point.
+            The SUV is sure to attract Indian customers who are in seacrh of a 7-seater family SUV and an offroader. The
+            SUV starts at Rs.13.68 lakhs and the top variant comes in at a whooping Rs.24.12 lakhs.</span>
+    </div>
+    <div class="h">
+        <img src="https://gumlet.assettype.com/evoindia%2F2021-01%2F877ab7d2-300e-4324-96b4-eeb4a2d3e984%2FSafari_Image_2.jpg?auto=format%2Ccompress&fit=max&format=webp&w=1536&dpr=1.3" alt="" class="im" id="i2">
+        <span class="inf2" >
+            The new Safari builds on the legacy of prestige and outstanding performance;
+            by combining Tata Motors' Impact 2.0 design language with the proven capability of Off-roading that Safari
+            inherits, it makes a good 7-seater SUV with a Butch appeal and astonishing looks. It is all set to attract
+            customers with a good starting range of Rs.14.99 lakhs which extends upto Rs.27.12 lakhs for the top end
+            model.
+
+        </span>
+
+    </div>
+    <div class="i">
+        <img src="https://gumlet.assettype.com/evoindia%2F2021-02%2F057ee13f-be1a-4249-bea6-a749a6c47162%2FHector.jpg?auto=format%2Ccompress&fit=max&format=webp&w=1536&dpr=1.3"
+            alt="" class="im" id="i3">
+        <span class="inf3">The MG Hector is another feature-loaded SUV from the British brand Morris-Garages and is also Mg's first offering for the Indian market.It has been titled the 'City SUV' for its comfort and manuverability in city drive.This SUV might not be very offroad capable but compensates it with a host of Artificial Intelligence feautures.The price bracket for this premium SUV is Rs.14.12 lakhs to Rs.23.22 lakhs for the top trim.
+        </span>
+
+    </div>
+    <div class="instr" id="p1">
+        &lt;Hover to enlarge image and text &gt;
+    </div>
+    <div class="instr" id="p2">
+        &lt;Hover to enlarge image and text &gt;
+    </div>
+    <div class="instr" id="p3">
+        &lt;Hover to enlarge image and text &gt;
+    </div>
+    <div class="my">
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQHxjZhA6-8wtg/profile-displayphoto-shrink_400_400/0/1633330467856?e=1656547200&v=beta&t=pJkIRIFiqDnstKBD8J43dUUMJaCNsvKwbojzao0gzX4"
+            alt="" id="myim">
+    </div>
+    <div id="mxj">
+        RITVIK SHARMA <br>
+        B.TECH CSE(Hons.) <br>
+        Lovely Professional University
+    </div>
+</body>
+
+</html>
